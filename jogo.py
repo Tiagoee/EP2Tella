@@ -12278,26 +12278,29 @@ PALAVRAS = [
 ]
 
 
-lista= funcoes.filtra(PALAVRAS,5)
+lista= funcoes.filtra(PALAVRAS,num)
 continuar=True
 tentativas=1
 palavras_usadas=[]
-
-while continuar:
+desistir= ['desisto','cansei','jogo chato','para','parar','parei']
+while continuar==True:
     chute=''
+    palavra=[]
     if tentativas>6:
         continuar=False
     chute=input('chute: ')
     
-    if chute == ['desisto','cansei','jogo chato','para','parar','parei']:
+    if chute in desistir:
         print('Que pena, tente denovo se quiser...')
         continuar=False
-    elif len(chute)<5:
+    if len(chute)<5:
         print('So são aceitas palavras com 5 letras')
-    elif chute in palavras_usadas:
+    if chute in palavras_usadas:
         print('Essa palavra ja foi usada')
 
     palavras_usadas.append(chute)
     tentativas = tentativas+1
+    palavra.extend(chute)
+
 
 
