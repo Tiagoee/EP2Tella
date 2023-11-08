@@ -12276,8 +12276,9 @@ PALAVRAS = [
     "zurrarieis", "zurrarmo", "zurrarmos", "zurras", "zurrasse", "zurrasseis", "zurrassem", "zurrassemos", "zurrasses", "zurraste", "zurrastes", "zurrava", "zurravam", "zurravamos", "zurravas", "zurraveis", "zurre", "zurrei", "zurreis", "zurrem", 
     "zurremo", "zurremos", "zurres", "zurro", "zurros", "zurrou", 
 ]
+
+
 lista= funcoes.filtra(PALAVRAS,5)
-print(len(lista))
 continuar=True
 tentativas=1
 palavras_usadas=[]
@@ -12287,7 +12288,7 @@ while continuar:
     if tentativas>6:
         continuar=False
     chute=input('chute: ')
-    palavras_usadas.append(chute)
+    
     if chute == ['desisto','cansei','jogo chato','para','parar','parei']:
         print('Que pena, tente denovo se quiser...')
         continuar=False
@@ -12296,7 +12297,7 @@ while continuar:
     elif chute in palavras_usadas:
         print('Essa palavra ja foi usada')
 
-
+    palavras_usadas.append(chute)
     tentativas = tentativas+1
 
 
