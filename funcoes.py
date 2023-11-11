@@ -8,21 +8,25 @@ def filtra(list,num):
          if menor not in lista:
             lista.append(menor)
     return lista
-def indica_posicao(sorteada,espec):
+
+
+def indica_posicao(sorteada, espec):
     lista = []
-    if len(sorteada)!= len(espec):
+    if len(sorteada) != len(espec):
+        print('\033[0;31;40m{}\033[m' .format('A quantidade de letras está errada!!!'))
         return lista
-    else:  
+    else:
         for i in range(len(sorteada)):
             menor_esp = espec.lower()
             menor_sort = sorteada.lower()
             if menor_sort[i] == menor_esp[i]:
-                lista.append(0)
-            elif menor_esp[i] in menor_sort :
-                lista.append(1)
-            else: 
-                lista.append(2)
-    return lista
+                lista.append('\033[1;36;40m{}\033[m'.format(menor_esp[i]))
+            elif menor_esp[i] in menor_sort:
+                lista.append('\033[1;33;40m{}\033[m'.format(menor_esp[i]))
+            else:
+                lista.append('\033[1;37;40m{}\033[m'.format(menor_esp[i]))
+    return ' '.join(lista)
+
 
 def inicializa(list):
     especuladas = []
