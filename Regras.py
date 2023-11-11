@@ -1,0 +1,16 @@
+
+def imprime_layout():
+    print("=" * 30)
+    print("|                           |")
+    print("| Bem-vindo ao Insper Termo |")
+    print("|                           |")
+    print(" ==== Design de Software === ")
+    print("Comandos: desisto")
+    print("Regras:")
+    print(" - Você tem 6 tentativas para acertar uma palavra aleatória com a quantidade de letras escolhida.")
+    print(" - A cada tentativa, a palavra testada terá suas letras coloridas conforme:")
+    print("   . \033[1;36;40m{}\033[m  : a letra está na posição correta;".format('Azul'))
+    print("   . \033[1;33;40m{}\033[m  : a palavra tem a letra, mas está na posição errada;".format('Amarelo'))
+    print("   . \033[1;37;40m{}\033[m  : a palavra não tem a letra.".format('Cinza'))
+    print(" - Os acentos são ignorados;")
+    print(" - As palavras podem possuir letras repetidas.")
