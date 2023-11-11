@@ -1,5 +1,5 @@
 import funcoes
-
+import Regras
 
 num=5
 
