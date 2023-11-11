@@ -1,10 +1,3 @@
-import funcoes
-
-
-num=5
-
-
-
 PALAVRAS = [
     "a", "Aarao", "aba", "abacate", "abacateiro", "abacateiros", "abacates", "abacaxi", "abacaxis", "abaciais", "abacial", "abaco", "abacos", "abade", "abades", "abadessa", "abadessas", "abadia", "abadias", "abafa", 
     "abafada", "abafadas", "abafadica", "abafadicas", "abafadico", "abafadicos", "abafado", "abafados", "abafai", "abafais", "abafam", "abafamento", "abafamentos", "abafamo", "abafamos", "abafando", "abafar", "abafara", "abafaram", "abafaramos", 
