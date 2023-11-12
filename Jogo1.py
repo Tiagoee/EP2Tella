@@ -1,8 +1,8 @@
 import random
 from Palavras import PALAVRAS
-from Funcoes import filtra
-from Funcoes import indica_posicao
-from Funcoes import inicializa
+from funcoes import filtra
+from funcoes import indica_posicao
+from funcoes import inicializa
 from Regras import imprime_layout
 from Regras import sorteando
 from Regras import main
